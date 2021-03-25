@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web, Php, Mvc, Programlama">
+    <meta name="description" content="Abc Firması ... Alanda ... yılından beri hizmet vermektedir.">
+    <meta name="author" content="... Yazılım">
+    <title>Html Form İşlemleri</title>
+</head>
+
+<body>
+
+    <!-- Form-1 -->
+    <p>Form-1</p>
+    <form action="ders2.php" method="POST">
+
+        <label for="kulad"> Kullanıcı Adı:</label>
+        <input type="text" name="username" id="kulad"><br><br>
+
+        <label for="isim">İsim</label>
+        <input type="text" name="name" id="isim"><br><br>
+
+        <label for="soyisim">Soyisim</label>
+        <input type="text" name="surname" id="soyisim"><br><br>
+
+        <input type="reset" value="Formu Temizle">
+
+    </form>
+
+    <br><br><br><br>
+    <!-- Form-2 -->
+    <p>Form-2</p>
+    <form action="ders2.php " method="POST ">
+
+        <input type="text" name="isim" placeholder="Kullanıcı Adı Giriniz."><br><br>
+
+        <input type="password" placeholder="Parolanızı Giriniz."><br><br>
+        <input type="reset" value="Temizle">
+        <input type="submit" value="Sil">
+        <button type="submit">Kaydet</button>
+    </form>
+
+
+
+
+    <br><br><br><br>
+    <!-- Form-3 -->
+    <p>Form-3</p>
+    <form action="ders2.php " method="POST ">
+        <textarea name="aciklama" cols="35" rows="5"></textarea>
+    </form>
+
+
+    <br><br><br><br>
+    <!-- Form-4 -->
+    <p>Form-4</p>
+    <form action="ders2.php " method="POST ">
+        <fieldset>
+            <legend>Giriş Bilgileri</legend>
+            <label for=""> Kullanıcı Adı</label>
+            <input type="text" name="kullaniciAdi">
+            <label for=""> Kullanıcı Parolası</label>
+            <input type="password" name="parola">
+        </fieldset>
+        <fieldset>
+            <legend>Kullanıcı Bilgileri</legend>
+            <label for=""> İsim</label>
+            <input type="text" name="isim">
+            <label for=""> Soyisim </label>
+            <input type="text" name="soyisim">
+        </fieldset>
+    </form>
+
+
+    <br><br><br><br>
+    <!-- Form-5 -->
+    <p>Form-5</p>
+    <form action="ders2.php " method="POST ">
+        <input type="text" name="ad" placeholder="İsim Giriniz."><br><br>
+        <input type="text" name="soyad" placeholder="Soyisim Giriniz." value="Çağlar"><br><br>
+
+        <select name="durum">
+            <option value="1">Aktif</option>
+            <option value="0">Pasif</option>
+        </select>
+        <br><br>
+
+        <select name="dersler[]" multiple size="5">
+            <option value="php" selected> PHP </option>
+            <option value="php"> Robotik </option>
+            <option value="kodlama"> Kodlama </option>
+            <option value="kodlama2" selected> Kodlama2 </option>
+            <option value="yazilim"> Yazılım </option>
+            <option value="yazilim2"> Yazılım2 </option>
+        </select>
+        <br><br>
+        <input type="reset" value="Temizle">
+        <input type="submit" value="Kaydet">
+    </form>
+
+
+    <br><br><br><br>
+    <!-- Form-6 -->
+    <p>Form-6</p>
+    <form action="ders2.php " method="POST ">
+        <label> <input type="checkbox" name="onay" value="1"> Sözleşmeyi Onaylıyorum.</label>
+    </form>
+
+
+
+    <br><br><br><br>
+    <!-- Form-7 -->
+    <p>Form-7</p>
+    <form action="ders2.php " method="POST ">
+        <label> <input type="radio" name="cinsiyet" value="1">Kadın </label>
+        <label> <input type="radio" name="cinsiyet" value="0">Erkek </label>
+    </form>
+
+
+
+    <br><br><br><br>
+    <!-- Form-8 -->
+    <p>Form-8</p>
+    <form action="ders2.php " method="POST ">
+        <input list="tarayicilar">
+        <datalist id="tarayicilar">
+            <option value="chrome">Chrome</option>
+            <option value="safari">safari</option>
+            <option value="explorer">Explorer</option>
+        </datalist>
+    </form>
+
+    <br><br><br><br>
+    <!-- Form-9 -->
+    <p>Form-9</p>
+    <form action="ders2.php " method="POST" enctype="multipart/form-data">
+
+        <input type="color" name="color"><br><br>
+
+        <input type="date" name="tarih" id=""><br><br>
+
+        <input type="week" name="hafta" id=""><br><br>
+
+        <input type="month" name="ay"><br><br>
+
+        <input type="time" name="saat" id=""><br><br>
+
+        <input type="datetime-local" name="saatTarih" id=""><br><br>
+
+        <input type="email" name="eposta" id="" placeholder=" E-Mail Giriniz."> <br><br>
+
+        <input type="text" name="İsim" minlength="5" maxlength="10" placeholder="İsim Giriniz."><br><br>
+
+        <input type="file" name="resim" id=""><br><br>
+
+        <input type="number" name="sayi" step="5"><br><br>
+
+        <input type="range" name="seviye" min="0" max="20">
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>
