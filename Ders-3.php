@@ -52,8 +52,118 @@
     echo "Dizi1'in 4. İndisi: <b>" . $dizi1[4] . "</b><br>";
     echo "Dizi1'in 5. İndisi: <b>" . $dizi1[5] . "</b><br>";
 
-
     ?>
+
+
+    <h2>Diziler-2</h2>
+
+    <?php
+
+    $bilgiler = [1, 2, 3, 4, 5];
+
+    $bilgiler = array(
+        1, 2, 3, 4, 5
+    );
+
+    $bilgiler = array(
+        "id"        => 1,
+        "adi"       => "Kerim",
+        "soyadi"    => "Elmacık",
+        "cinsiyet"  => "E",
+        "yas"       => 25
+    );
+
+
+    echo "<pre>";
+    print_r($bilgiler);
+    echo "</pre>";
+
+    echo $bilgiler["adi"] . "" . $bilgiler["soyadi"];
+
+    echo "<br>";
+    foreach ($bilgiler as $key => $bilgi) {
+        echo $key . "-->" . $bilgi . "<br>";
+    }
+
+    echo "<br>";
+    foreach ($bilgiler as $key => $value) {
+        echo $key . "-->" . $value . "<br>";
+    }
+
+
+    $isimler[]="Mehmet";
+    $isimler[]="Kemal";
+    $isimler[]="Ali";
+
+
+    echo "<pre>";
+    print_r($isimler);
+    echo "</pre>";
+
+    $isimler=array();
+
+    $isimler["isim1"]="Mehmet";
+    $isimler["isim2"]="Kemal";
+    $isimler["isim3"]="Ali";
+    $isimler[]="Fatih";
+    $isimler[0]="Yusuf";
+
+
+    echo "<pre>";
+    print_r($isimler);
+    echo "</pre>";
+
+
+    /* Çok Boyutlu Diziler */
+
+    $bilgiler = array(
+        "id"        => 1,
+        "adi"       => "Kerim",
+        "soyadi"    => "Elmacık",
+        "cinsiyet"  => "E",
+        "yas"       => 25,
+        array(1, 2, 3, 4)
+        
+    );
+    
+    echo "<pre>";
+    print_r($isimler);
+    echo "</pre>";
+
+    echo "1. Boyuttaki Elemana Erişim: " . $bilgiler["adi"] . "<br>";
+    echo "2. Boyuttaki Elemana Erişim: " . $bilgiler[0][3] . "<br>";
+
+    echo "<br>";
+    echo "<br>";
+
+
+    $bilgiler = array(
+        "id"        => 1,
+        "adi"       => "Kerim",
+        "soyadi"    => "Elmacık",
+        "cinsiyet"  => "E",
+        "yas"       => 25,
+        "dersler"   => array(
+            "ders1" => "Fizik",
+            "ders2" => "php",
+            "ders3" => "asp",
+            "ders4" => "sql"
+        )
+    );
+
+    echo "<pre>";
+    print_r($bilgiler);
+    echo "</pre>";
+    
+    echo "1. Boyuttaki Elemana Erişim:" . $bilgiler["adi"] . "<br>";
+    echo "2. Boyuttaki Elemana Erişim:" . $bilgiler["dersler"]["ders1"] . "<br>";
+    echo "3. Boyuttaki Elemana Erişim:" . $bilgiler["dersler"]["ders2"] . "<br>";
+
+    
+    ?>
+
+
+    
 </body>
 
 </html>
