@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <!-- Açıklama Satırı : Shift + Alt + A -->
+    <!-- Web Sitesi Head Bloğu -->
     <title>Web Programlama Dersi</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
